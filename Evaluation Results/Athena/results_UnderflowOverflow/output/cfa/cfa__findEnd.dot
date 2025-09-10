@@ -1,0 +1,14 @@
+digraph findEnd {
+28 [shape="doublecircle" label="N28\n4"]
+29 [shape="circle" label="N29\n1"]
+30 [shape="circle" label="N30\n3"]
+31 [shape="circle" label="N31\n0"]
+24 [shape="circle" label="N24\n2"]
+25 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">25</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">26</td><td align="left">Node *begin = list;</td></tr><tr><td align="right">27</td><td align="left">while</td></tr></table>>]
+25 -> 28[label=""]
+28 -> 29 [label="[(begin->next) != list]" fontname="Courier New"]
+28 -> 30 [label="[!((begin->next) != list)]" fontname="Courier New"]
+29 -> 31 [label="begin = begin->next;" fontname="Courier New"]
+30 -> 24 [label="return begin;" fontname="Courier New"]
+31 -> 28 [label="" fontname="Courier New"]
+}

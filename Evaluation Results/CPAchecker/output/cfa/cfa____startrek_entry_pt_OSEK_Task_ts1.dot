@@ -1,0 +1,11 @@
+digraph __startrek_entry_pt_OSEK_Task_ts1 {
+225 [shape="circle" label="N225\n3"]
+226 [shape="circle" label="N226\n2"]
+227 [shape="circle" label="N227\n1"]
+224 [shape="circle" label="N224\n0"]
+225 -> 226 [label="Function start dummy edge" fontname="Courier New"]
+100069 [shape="component" label="OSEK_Task_ts1"]
+226 -> 100069 [label="OSEK_Task_ts1();" fontname="Courier New"]
+100069 -> 227 [label="" fontname="Courier New"]
+227 -> 224 [label="return 1;" fontname="Courier New"]
+}

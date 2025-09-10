@@ -1,0 +1,18 @@
+digraph ZwClose {
+942 [shape="circle" label="N942\n10"]
+943 [shape="circle" label="N943\n9"]
+945 [shape="diamond" label="N945\n7"]
+947 [shape="circle" label="N947\n3"]
+948 [shape="circle" label="N948\n6"]
+954 [shape="circle" label="N954\n2"]
+943 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">943</td><td align="left">int tmp_ndt_11;</td></tr><tr><td align="right">944</td><td align="left">tmp_ndt_11 = __VERIFIER_nondet_int();</td></tr></table>>]
+943 -> 945[label=""]
+948 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">948</td><td align="left">Goto: switch_12_default</td></tr><tr><td align="right">957</td><td align="left">Label: switch_12_default</td></tr><tr><td align="right">958</td><td align="left">return -1073741823;</td></tr></table>>]
+948 -> 941[label=""]
+954 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">954</td><td align="left">Label: switch_12_0</td></tr><tr><td align="right">955</td><td align="left">return 0;</td></tr></table>>]
+954 -> 941[label=""]
+942 -> 943 [label="Function start dummy edge" fontname="Courier New"]
+945 -> 947 [label="[tmp_ndt_11 == 0]" fontname="Courier New"]
+945 -> 948 [label="[!(tmp_ndt_11 == 0)]" fontname="Courier New"]
+947 -> 954 [label="Goto: switch_12_0" fontname="Courier New"]
+}

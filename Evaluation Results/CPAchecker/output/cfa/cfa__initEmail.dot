@@ -1,0 +1,17 @@
+digraph initEmail {
+244 [shape="circle" label="N244\n8"]
+245 [shape="circle" label="N245\n7"]
+246 [shape="diamond" label="N246\n6"]
+248 [shape="circle" label="N248\n3"]
+249 [shape="circle" label="N249\n5"]
+250 [shape="circle" label="N250\n2"]
+249 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">249</td><td align="left">retValue_acc = -1;</td></tr><tr><td align="right">253</td><td align="left">return retValue_acc;</td></tr></table>>]
+249 -> 243[label=""]
+250 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">250</td><td align="left">retValue_acc = __ste_Email_counter;</td></tr><tr><td align="right">251</td><td align="left">return retValue_acc;</td></tr></table>>]
+250 -> 243[label=""]
+244 -> 245 [label="Function start dummy edge" fontname="Courier New"]
+246 -> 248 [label="[__ste_Email_counter < 2]" fontname="Courier New"]
+246 -> 249 [label="[!(__ste_Email_counter < 2)]" fontname="Courier New"]
+248 -> 250 [label="__ste_Email_counter = __ste_Email_counter + 1;" fontname="Courier New"]
+245 -> 246 [label="int retValue_acc;" fontname="Courier New"]
+}

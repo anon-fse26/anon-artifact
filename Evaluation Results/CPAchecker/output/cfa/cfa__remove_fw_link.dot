@@ -1,0 +1,13 @@
+digraph remove_fw_link {
+76 [shape="doublecircle" label="N76\n6"]
+78 [shape="circle" label="N78\n1"]
+77 [shape="circle" label="N77\n5"]
+73 [shape="circle" label="N73\n0"]
+74 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">74</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">75</td><td align="left">while</td></tr></table>>]
+74 -> 76[label=""]
+77 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">77</td><td align="left">struct node *next = list-&gt;next;</td></tr><tr><td align="right">79</td><td align="left">list-&gt;next = (void *)0;</td></tr><tr><td align="right">80</td><td align="left">list = next;</td></tr><tr><td align="right">81</td><td align="left"></td></tr></table>>]
+77 -> 76[label=""]
+76 -> 78 [label="[list == 0]" fontname="Courier New"]
+76 -> 77 [label="[!(list == 0)]" fontname="Courier New"]
+78 -> 73 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph _0_6 {
+161 [shape="circle" label="N161\n3"]
+162 [shape="circle" label="N162\n2"]
+163 [shape="circle" label="N163\n1"]
+158 [shape="circle" label="N158\n0"]
+159 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">159</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">160</td><td align="left">TYPEOFVALUES val0 = 2;</td></tr></table>>]
+159 -> 161[label=""]
+100018 [shape="component" label="attr"]
+161 -> 100018 [label="attr(tid, 0, val0, 1);" fontname="Courier New"]
+100018 -> 162 [label="" fontname="Courier New"]
+100019 [shape="component" label="setpc"]
+162 -> 100019 [label="setpc(tid, 0, 5);" fontname="Courier New"]
+100019 -> 163 [label="" fontname="Courier New"]
+163 -> 158 [label="default return" fontname="Courier New"]
+}

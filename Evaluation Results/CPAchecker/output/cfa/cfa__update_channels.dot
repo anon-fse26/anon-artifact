@@ -1,0 +1,7 @@
+digraph update_channels {
+652 [shape="circle" label="N652\n2"]
+653 [shape="circle" label="N653\n1"]
+651 [shape="circle" label="N651\n0"]
+652 -> 653 [label="Function start dummy edge" fontname="Courier New"]
+653 -> 651 [label="return;" fontname="Courier New"]
+}

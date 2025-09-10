@@ -1,0 +1,7 @@
+digraph is_queue_empty {
+1815 [shape="circle" label="N1815\n4"]
+1816 [shape="circle" label="N1816\n3"]
+1816 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1816</td><td align="left">int retValue_acc;</td></tr><tr><td align="right">1817</td><td align="left">retValue_acc = queue_empty;</td></tr><tr><td align="right">1818</td><td align="left">return retValue_acc;</td></tr></table>>]
+1816 -> 1814[label=""]
+1815 -> 1816 [label="Function start dummy edge" fontname="Courier New"]
+}

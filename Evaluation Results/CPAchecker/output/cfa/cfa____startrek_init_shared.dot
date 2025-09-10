@@ -1,0 +1,7 @@
+digraph __startrek_init_shared {
+1443 [shape="circle" label="N1443\n4"]
+1444 [shape="circle" label="N1444\n3"]
+1444 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1444</td><td align="left">_obstacle_flag_[0] = __startrek_hidden_obstacle_flag;</td></tr><tr><td align="right">1445</td><td align="left">_nxtway_gs_mode_[0] = __startrek_hidden_nxtway_gs_mode;</td></tr><tr><td align="right">1446</td><td align="left">default return</td></tr></table>>]
+1444 -> 1442[label=""]
+1443 -> 1444 [label="Function start dummy edge" fontname="Courier New"]
+}

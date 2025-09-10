@@ -1,0 +1,13 @@
+digraph alloc_or_die_master {
+20 [shape="diamond" label="N20\n7"]
+22 [shape="circle" label="N22\n6"]
+21 [shape="circle" label="N21\n4"]
+527 [shape="circle" label="N527\n0"]
+17 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">17</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">18</td><td align="left">struct master_item *ptr;</td></tr><tr><td align="right">19</td><td align="left">ptr = malloc(24UL);</td></tr></table>>]
+17 -> 20[label=""]
+21 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">21</td><td align="left">ptr-&gt;next = (void *)0;</td></tr><tr><td align="right">24</td><td align="left">ptr-&gt;prev = (void *)0;</td></tr><tr><td align="right">25</td><td align="left">ptr-&gt;slave = (void *)0;</td></tr><tr><td align="right">26</td><td align="left">return ptr;</td></tr></table>>]
+21 -> 16[label=""]
+20 -> 22 [label="[ptr == 0]" fontname="Courier New"]
+20 -> 21 [label="[!(ptr == 0)]" fontname="Courier New"]
+22 -> 527 [label="abort();" fontname="Courier New"]
+}

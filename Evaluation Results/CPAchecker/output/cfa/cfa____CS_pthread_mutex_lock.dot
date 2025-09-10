@@ -1,0 +1,15 @@
+digraph __CS_pthread_mutex_lock {
+38 [shape="circle" label="N38\n7"]
+39 [shape="diamond" label="N39\n6"]
+41 [shape="circle" label="N41\n3"]
+42 [shape="circle" label="N42\n5"]
+43 [shape="circle" label="N43\n2"]
+42 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">42</td><td align="left">__CS_ret = 1U;</td></tr><tr><td align="right">44</td><td align="left">return 1;</td></tr></table>>]
+42 -> 37[label=""]
+43 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">43</td><td align="left"></td></tr><tr><td align="right">40</td><td align="left">return 0;</td></tr></table>>]
+43 -> 37[label=""]
+38 -> 39 [label="Function start dummy edge" fontname="Courier New"]
+39 -> 41 [label="[(*lock) == 0]" fontname="Courier New"]
+39 -> 42 [label="[!((*lock) == 0)]" fontname="Courier New"]
+41 -> 43 [label="*lock = __CS_thread_index + 1;" fontname="Courier New"]
+}

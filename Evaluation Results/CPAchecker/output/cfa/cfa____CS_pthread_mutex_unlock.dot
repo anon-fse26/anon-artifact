@@ -1,0 +1,15 @@
+digraph __CS_pthread_mutex_unlock {
+48 [shape="circle" label="N48\n8"]
+49 [shape="diamond" label="N49\n7"]
+51 [shape="circle" label="N51\n3"]
+52 [shape="circle" label="N52\n6"]
+53 [shape="circle" label="N53\n2"]
+52 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">52</td><td align="left">*lock = 0;</td></tr><tr><td align="right">56</td><td align="left"></td></tr><tr><td align="right">50</td><td align="left">return 0;</td></tr></table>>]
+52 -> 47[label=""]
+53 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">53</td><td align="left">__CS_ret = 2U;</td></tr><tr><td align="right">54</td><td align="left">return 1;</td></tr></table>>]
+53 -> 47[label=""]
+48 -> 49 [label="Function start dummy edge" fontname="Courier New"]
+49 -> 51 [label="[(*lock) != (__CS_thread_index + 1)]" fontname="Courier New"]
+49 -> 52 [label="[!((*lock) != (__CS_thread_index + 1))]" fontname="Courier New"]
+51 -> 53 [label="__CS_error = 1;" fontname="Courier New"]
+}

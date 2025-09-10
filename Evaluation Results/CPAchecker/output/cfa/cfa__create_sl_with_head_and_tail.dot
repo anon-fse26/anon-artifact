@@ -1,0 +1,7 @@
+digraph create_sl_with_head_and_tail {
+7 [shape="circle" label="N7\n12"]
+8 [shape="circle" label="N8\n11"]
+8 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8</td><td align="left">struct sl *sl;</td></tr><tr><td align="right">9</td><td align="left">sl = malloc(16UL);</td></tr><tr><td align="right">10</td><td align="left">sl-&gt;head = malloc(24UL);</td></tr><tr><td align="right">11</td><td align="left">sl-&gt;tail = malloc(24UL);</td></tr><tr><td align="right">12</td><td align="left">sl-&gt;head-&gt;n1 = sl-&gt;tail;</td></tr><tr><td align="right">13</td><td align="left">sl-&gt;head-&gt;n2 = sl-&gt;head-&gt;n1;</td></tr><tr><td align="right">14</td><td align="left">sl-&gt;head-&gt;n3 = sl-&gt;head-&gt;n2;</td></tr><tr><td align="right">15</td><td align="left">sl-&gt;tail-&gt;n1 = (void *)0;</td></tr><tr><td align="right">16</td><td align="left">sl-&gt;tail-&gt;n2 = sl-&gt;tail-&gt;n1;</td></tr><tr><td align="right">17</td><td align="left">sl-&gt;tail-&gt;n3 = sl-&gt;tail-&gt;n2;</td></tr><tr><td align="right">18</td><td align="left">return sl;</td></tr></table>>]
+8 -> 6[label=""]
+7 -> 8 [label="Function start dummy edge" fontname="Courier New"]
+}
