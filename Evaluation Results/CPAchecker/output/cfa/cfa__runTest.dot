@@ -1,0 +1,11 @@
+digraph runTest {
+45 [shape="circle" label="N45\n3"]
+46 [shape="circle" label="N46\n2"]
+47 [shape="circle" label="N47\n1"]
+44 [shape="circle" label="N44\n0"]
+45 -> 46 [label="Function start dummy edge" fontname="Courier New"]
+100023 [shape="component" label="test"]
+46 -> 100023 [label="test();" fontname="Courier New"]
+100023 -> 47 [label="" fontname="Courier New"]
+47 -> 44 [label="return;" fontname="Courier New"]
+}

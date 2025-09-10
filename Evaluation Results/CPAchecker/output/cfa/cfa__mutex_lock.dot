@@ -1,0 +1,16 @@
+digraph mutex_lock {
+6 [shape="circle" label="N6\n7"]
+7 [shape="diamond" label="N7\n6"]
+8 [shape="circle" label="N8\n4"]
+9 [shape="circle" label="N9\n5"]
+10 [shape="circle" label="N10\n3"]
+10 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">10</td><td align="left">0;</td></tr><tr><td align="right">11</td><td align="left">ldv_mutex = 2;</td></tr><tr><td align="right">12</td><td align="left">default return</td></tr></table>>]
+10 -> 5[label=""]
+6 -> 7 [label="Function start dummy edge" fontname="Courier New"]
+7 -> 8 [label="[ldv_mutex == 1]" fontname="Courier New"]
+7 -> 9 [label="[!(ldv_mutex == 1)]" fontname="Courier New"]
+100006 [shape="component" label="__blast_assert"]
+9 -> 100006 [label="__blast_assert();" fontname="Courier New"]
+100006 -> 10 [label="" fontname="Courier New"]
+8 -> 10 [label="0;" fontname="Courier New"]
+}

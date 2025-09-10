@@ -1,0 +1,18 @@
+digraph mail {
+1748 [shape="circle" label="N1748\n6"]
+1749 [shape="circle" label="N1749\n5"]
+1751 [shape="circle" label="N1751\n3"]
+1752 [shape="circle" label="N1752\n2"]
+1753 [shape="circle" label="N1753\n1"]
+1747 [shape="circle" label="N1747\n0"]
+1749 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1749</td><td align="left">int tmp;</td></tr><tr><td align="right">1750</td><td align="left">puts(\&quot;mail sent\&quot;);</td></tr></table>>]
+1749 -> 1751[label=""]
+1748 -> 1749 [label="Function start dummy edge" fontname="Courier New"]
+100002 [shape="component" label="getEmailTo"]
+1751 -> 100002 [label="tmp = getEmailTo(msg);" fontname="Courier New"]
+100002 -> 1752 [label="" fontname="Courier New"]
+100003 [shape="component" label="incoming"]
+1752 -> 100003 [label="incoming(tmp, msg);" fontname="Courier New"]
+100003 -> 1753 [label="" fontname="Courier New"]
+1753 -> 1747 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph ecrobot_get_sonar_sensor {
+188 [shape="circle" label="N188\n4"]
+189 [shape="circle" label="N189\n3"]
+189 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">189</td><td align="left">unsigned char tmp;</td></tr><tr><td align="right">190</td><td align="left">tmp = __VERIFIER_nondet_U8();</td></tr><tr><td align="right">191</td><td align="left">return tmp;</td></tr></table>>]
+189 -> 187[label=""]
+188 -> 189 [label="Function start dummy edge" fontname="Courier New"]
+}

@@ -1,0 +1,18 @@
+digraph cstrlen {
+44 [shape="circle" label="N44\n9"]
+45 [shape="circle" label="N45\n8"]
+47 [shape="doublecircle" label="N47\n6"]
+48 [shape="circle" label="N48\n3"]
+49 [shape="circle" label="N49\n5"]
+50 [shape="circle" label="N50\n2"]
+43 [shape="circle" label="N43\n4"]
+45 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">45</td><td align="left">const char *p = s;</td></tr><tr><td align="right">46</td><td align="left">while</td></tr></table>>]
+45 -> 47[label=""]
+50 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">50</td><td align="left">p = p + 1;</td></tr><tr><td align="right">51</td><td align="left">__CPAchecker_TMP_0;</td></tr><tr><td align="right">52</td><td align="left"></td></tr></table>>]
+50 -> 47[label=""]
+44 -> 45 [label="Function start dummy edge" fontname="Courier New"]
+47 -> 48 [label="[(*p) != '\x0']" fontname="Courier New"]
+47 -> 49 [label="[!((*p) != '\x0')]" fontname="Courier New"]
+48 -> 50 [label="const char * const __CPAchecker_TMP_0 = p;" fontname="Courier New"]
+49 -> 43 [label="return (int)(p - s);" fontname="Courier New"]
+}

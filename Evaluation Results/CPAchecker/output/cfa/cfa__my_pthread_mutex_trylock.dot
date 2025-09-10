@@ -1,0 +1,18 @@
+digraph my_pthread_mutex_trylock {
+5 [shape="circle" label="N5\n6"]
+6 [shape="circle" label="N6\n5"]
+7 [shape="circle" label="N7\n4"]
+8 [shape="diamond" label="N8\n3"]
+10 [shape="circle" label="N10\n1"]
+9 [shape="circle" label="N9\n2"]
+4 [shape="circle" label="N4\n0"]
+5 -> 6 [label="Function start dummy edge" fontname="Courier New"]
+100001 [shape="component" label="pthread_mutex_trylock"]
+7 -> 100001 [label="error = pthread_mutex_trylock(mutex);" fontname="Courier New"]
+100001 -> 8 [label="" fontname="Courier New"]
+8 -> 10 [label="[error == 1]" fontname="Courier New"]
+8 -> 9 [label="[!(error == 1)]" fontname="Courier New"]
+10 -> 4 [label="return 0;" fontname="Courier New"]
+6 -> 7 [label="int error;" fontname="Courier New"]
+9 -> 4 [label="return error;" fontname="Courier New"]
+}

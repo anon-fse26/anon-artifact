@@ -1,0 +1,16 @@
+digraph __abs {
+1 [shape="circle" label="N1\n6"]
+2 [shape="circle" label="N2\n5"]
+3 [shape="diamond" label="N3\n4"]
+4 [shape="circle" label="N4\n2"]
+5 [shape="circle" label="N5\n3"]
+6 [shape="circle" label="N6\n1"]
+0 [shape="circle" label="N0\n0"]
+1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
+3 -> 4 [label="[x > 0]" fontname="Courier New"]
+3 -> 5 [label="[!(x > 0)]" fontname="Courier New"]
+6 -> 0 [label="return __CPAchecker_TMP_0;" fontname="Courier New"]
+2 -> 3 [label="int __CPAchecker_TMP_0;" fontname="Courier New"]
+5 -> 6 [label="__CPAchecker_TMP_0 = -x;" fontname="Courier New"]
+4 -> 6 [label="__CPAchecker_TMP_0 = x;" fontname="Courier New"]
+}

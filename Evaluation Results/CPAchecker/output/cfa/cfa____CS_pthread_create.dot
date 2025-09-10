@@ -1,0 +1,15 @@
+digraph __CS_pthread_create {
+142 [shape="circle" label="N142\n13"]
+143 [shape="diamond" label="N143\n12"]
+145 [shape="circle" label="N145\n2"]
+144 [shape="circle" label="N144\n11"]
+146 [shape="circle" label="N146\n1"]
+141 [shape="circle" label="N141\n0"]
+144 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">144</td><td align="left">const unsigned char __CPAchecker_TMP_0 = __CS_thread_index;</td></tr><tr><td align="right">148</td><td align="left">__CS_thread_index = __CS_thread_index + 1;</td></tr><tr><td align="right">149</td><td align="left">__CPAchecker_TMP_0;</td></tr><tr><td align="right">150</td><td align="left">__CS_thread_allocated[__CS_thread_index] = 1;</td></tr><tr><td align="right">151</td><td align="left">__CS_thread_born_round[__CS_thread_index] = __CS_round;</td></tr><tr><td align="right">152</td><td align="left">__CS_thread[__CS_thread_index] = t1;</td></tr><tr><td align="right">153</td><td align="left">__CS_thread_status[__CS_round][__CS_thread_index] = 1U;</td></tr><tr><td align="right">154</td><td align="left">*id1 = __CS_thread_index;</td></tr><tr><td align="right">155</td><td align="left">return __CS_thread_index;</td></tr></table>>]
+144 -> 141[label=""]
+142 -> 143 [label="Function start dummy edge" fontname="Courier New"]
+143 -> 145 [label="[__CS_thread_index == 2]" fontname="Courier New"]
+143 -> 144 [label="[!(__CS_thread_index == 2)]" fontname="Courier New"]
+145 -> 146 [label="*id1 = 123;" fontname="Courier New"]
+146 -> 141 [label="return -1;" fontname="Courier New"]
+}

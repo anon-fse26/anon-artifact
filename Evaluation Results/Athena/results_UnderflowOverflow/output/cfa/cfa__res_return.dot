@@ -1,0 +1,18 @@
+digraph res_return {
+9 [shape="circle" label="N9\n8"]
+10 [shape="circle" label="N10\n7"]
+14 [shape="diamond" label="N14\n5"]
+12 [shape="circle" label="N12\n3"]
+11 [shape="circle" label="N11\n4"]
+15 [shape="circle" label="N15\n2"]
+8 [shape="circle" label="N8\n0"]
+10 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">10</td><td align="left">const int __CPAchecker_TMP_0 = flag;</td></tr><tr><td align="right">13</td><td align="left">flag = flag + 1;</td></tr></table>>]
+10 -> 14[label=""]
+15 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">15</td><td align="left">__CPAchecker_TMP_1 = __VERIFIER_nondet_int();</td></tr><tr><td align="right">16</td><td align="left">return __CPAchecker_TMP_1;</td></tr></table>>]
+15 -> 8[label=""]
+9 -> 10 [label="Function start dummy edge" fontname="Courier New"]
+14 -> 12 [label="[__CPAchecker_TMP_0 < 100]" fontname="Courier New"]
+14 -> 11 [label="[!(__CPAchecker_TMP_0 < 100)]" fontname="Courier New"]
+12 -> 15 [label="int __CPAchecker_TMP_1;" fontname="Courier New"]
+11 -> 8 [label="return -1;" fontname="Courier New"]
+}

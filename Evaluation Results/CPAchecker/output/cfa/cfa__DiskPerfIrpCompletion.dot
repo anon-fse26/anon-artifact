@@ -1,0 +1,14 @@
+digraph DiskPerfIrpCompletion {
+72 [shape="circle" label="N72\n5"]
+73 [shape="circle" label="N73\n4"]
+75 [shape="circle" label="N75\n2"]
+76 [shape="circle" label="N76\n1"]
+71 [shape="circle" label="N71\n0"]
+73 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">73</td><td align="left">int Event;</td></tr><tr><td align="right">74</td><td align="left">Event = Context;</td></tr></table>>]
+73 -> 75[label=""]
+72 -> 73 [label="Function start dummy edge" fontname="Courier New"]
+100050 [shape="component" label="KeSetEvent"]
+75 -> 100050 [label="KeSetEvent(Event, 0, 0);" fontname="Courier New"]
+100050 -> 76 [label="" fontname="Courier New"]
+76 -> 71 [label="return -1073741802;" fontname="Courier New"]
+}

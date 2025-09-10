@@ -1,0 +1,13 @@
+digraph ecrobot_get_nxtcolorsensor_mode {
+19 [shape="circle" label="N19\n4"]
+20 [shape="circle" label="N20\n3"]
+21 [shape="circle" label="N21\n2"]
+22 [shape="circle" label="N22\n1"]
+18 [shape="circle" label="N18\n0"]
+19 -> 20 [label="Function start dummy edge" fontname="Courier New"]
+100282 [shape="component" label="__startrek_read_nxtcolorsensor_mode"]
+21 -> 100282 [label="tmp = __startrek_read_nxtcolorsensor_mode();" fontname="Courier New"]
+100282 -> 22 [label="" fontname="Courier New"]
+20 -> 21 [label="unsigned char tmp;" fontname="Courier New"]
+22 -> 18 [label="return tmp;" fontname="Courier New"]
+}

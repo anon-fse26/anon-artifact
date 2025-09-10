@@ -1,0 +1,18 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+2 [fillcolor="cornflowerblue" label="2 @ N1\nmain entry\nstem\\nAbstractionState: ABS1: true\n" id="2"]
+4 [label="4 @ N7\nmain\nstem\\n" id="4"]
+6 [label="6 @ N2\nmain\nstem\\n" id="6"]
+8 [fillcolor="cornflowerblue" label="8 @ N3\nmain\nstem\\nAbstractionState: ABS2: true\n" id="8"]
+18 [fillcolor="orange" label="18 @ N4\nmain\nstem\\n" id="18"]
+15 [label="15 @ N4\nmain\nloop\\n" id="15"]
+29 [fillcolor="red" label="29 @ N3\nmain\nloop\\nAbstractionState: ABS3: true\n" id="29"]
+26 [fillcolor="orange" label="26 @ N4\nmain\nloop\\n" id="26"]
+2 -> 4 [color="red" label="Line 0: \lINIT GLOBAL VARS\l" id="2 -> 4"]
+4 -> 6 [color="red" label="Lines 15 - 0: \lint main();\lFunction start dummy edge\l" id="4 -> 6"]
+6 -> 8 [color="red" label="Line 17: \lwhile\l" id="6 -> 8"]
+8 -> 15 [color="red" label="Line 17: \l\l" id="8 -> 15"]
+8 -> 18 [label="Line 17: \l\l" id="8 -> 18"]
+15 -> 29 [color="red" label="Line 0: \l\l" id="15 -> 29"]
+29 -> 26 [label="Line 17: \l\l" id="29 -> 26"]
+}

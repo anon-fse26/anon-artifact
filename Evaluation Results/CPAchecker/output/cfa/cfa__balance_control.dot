@@ -1,0 +1,7 @@
+digraph balance_control {
+17 [shape="circle" label="N17\n62"]
+18 [shape="circle" label="N18\n61"]
+18 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 18 and 78"]
+18 -> 16[label=""]
+17 -> 18 [label="Function start dummy edge" fontname="Courier New"]
+}
