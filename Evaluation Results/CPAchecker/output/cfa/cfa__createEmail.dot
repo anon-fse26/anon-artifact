@@ -1,0 +1,18 @@
+digraph createEmail {
+1895 [shape="circle" label="N1895\n8"]
+1896 [shape="circle" label="N1896\n7"]
+1899 [shape="circle" label="N1899\n4"]
+1900 [shape="circle" label="N1900\n3"]
+1901 [shape="circle" label="N1901\n2"]
+1896 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1896</td><td align="left">int retValue_acc;</td></tr><tr><td align="right">1897</td><td align="left">int msg;</td></tr><tr><td align="right">1898</td><td align="left">msg = 1;</td></tr></table>>]
+1896 -> 1899[label=""]
+1901 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1901</td><td align="left">retValue_acc = msg;</td></tr><tr><td align="right">1902</td><td align="left">return retValue_acc;</td></tr></table>>]
+1901 -> 1894[label=""]
+1895 -> 1896 [label="Function start dummy edge" fontname="Courier New"]
+100022 [shape="component" label="setEmailFrom"]
+1899 -> 100022 [label="setEmailFrom(msg, from);" fontname="Courier New"]
+100022 -> 1900 [label="" fontname="Courier New"]
+100023 [shape="component" label="setEmailTo"]
+1900 -> 100023 [label="setEmailTo(msg, to);" fontname="Courier New"]
+100023 -> 1901 [label="" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph ffs {
+4 [shape="doublecircle" label="N4\n7"]
+5 [shape="circle" label="N5\n4"]
+6 [shape="circle" label="N6\n6"]
+7 [shape="circle" label="N7\n3"]
+0 [shape="circle" label="N0\n5"]
+1 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">2</td><td align="left">int i = 1;</td></tr><tr><td align="right">3</td><td align="left">while</td></tr></table>>]
+1 -> 4[label=""]
+7 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">7</td><td align="left">i = i + 1;</td></tr><tr><td align="right">8</td><td align="left">__CPAchecker_TMP_0;</td></tr><tr><td align="right">9</td><td align="left">w = w / 2;</td></tr><tr><td align="right">10</td><td align="left"></td></tr></table>>]
+7 -> 4[label=""]
+4 -> 5 [label="[(w % 2) == 0]" fontname="Courier New"]
+4 -> 6 [label="[!((w % 2) == 0)]" fontname="Courier New"]
+5 -> 7 [label="const int __CPAchecker_TMP_0 = i;" fontname="Courier New"]
+6 -> 0 [label="return i;" fontname="Courier New"]
+}

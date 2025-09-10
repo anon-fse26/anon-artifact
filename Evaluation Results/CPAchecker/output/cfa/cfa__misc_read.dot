@@ -1,0 +1,7 @@
+digraph misc_read {
+45 [shape="circle" label="N45\n2"]
+46 [shape="circle" label="N46\n1"]
+44 [shape="circle" label="N44\n0"]
+45 -> 46 [label="Function start dummy edge" fontname="Courier New"]
+46 -> 44 [label="return 0;" fontname="Courier New"]
+}

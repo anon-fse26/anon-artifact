@@ -1,0 +1,4 @@
+digraph __list_add {
+5 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">5</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">6</td><td align="left">next-&gt;prev = new;</td></tr><tr><td align="right">7</td><td align="left">new-&gt;next = next;</td></tr><tr><td align="right">8</td><td align="left">new-&gt;prev = prev;</td></tr><tr><td align="right">9</td><td align="left">prev-&gt;next = new;</td></tr><tr><td align="right">10</td><td align="left">default return</td></tr></table>>]
+5 -> 4[label=""]
+}

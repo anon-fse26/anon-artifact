@@ -1,0 +1,12 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+0 [fillcolor="cornflowerblue" label="0 @ N14\nmain entry\nAbstractionState: ABS0: true\n" id="0"]
+3 [label="3 @ N5\nmy_pthread_mutex_trylock entry\n" id="3"]
+5 [label="5 @ N1\npthread_mutex_trylock entry\n" id="5"]
+7 [label="7 @ N0\npthread_mutex_trylock exit\n" id="7"]
+14 [label="14 @ N4\nmy_pthread_mutex_trylock exit\n" id="14"]
+0 -> 3 []
+3 -> 5 []
+5 -> 7 []
+7 -> 14 []
+}

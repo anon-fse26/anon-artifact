@@ -1,0 +1,33 @@
+IntBool
+
+[main::__retval__]
+
+IntEq
+
+[main::rc, my_pthread_mutex_trylock::__retval__, pthread_mutex_trylock::__retval__, my_pthread_mutex_trylock::error]
+
+IntAdd
+
+[]
+
+IntOverflow
+
+[]
+
+ALL
+
+[main::mutex, my_pthread_mutex_trylock::mutex, main::rc, pthread_mutex_trylock::mutex, main::__retval__, my_pthread_mutex_trylock::__retval__, main::mutex1, pthread_mutex_trylock::__retval__, my_pthread_mutex_trylock::error]
+
+DEPENDENCIES
+
+[[main::mutex, main::mutex1, my_pthread_mutex_trylock::mutex, pthread_mutex_trylock::mutex] --> [2],
+[main::rc, my_pthread_mutex_trylock::__retval__, my_pthread_mutex_trylock::error, pthread_mutex_trylock::__retval__] --> [0, 1],
+[main::__retval__] --> [0]]
+
+RELEVANT VARS
+
+[pthread_mutex_trylock::__retval__, my_pthread_mutex_trylock::error]
+
+RELEVANT FIELDS
+
+{}

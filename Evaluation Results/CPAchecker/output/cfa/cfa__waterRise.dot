@@ -1,0 +1,15 @@
+digraph waterRise {
+74 [shape="circle" label="N74\n6"]
+75 [shape="diamond" label="N75\n5"]
+77 [shape="circle" label="N77\n3"]
+78 [shape="circle" label="N78\n4"]
+76 [shape="circle" label="N76\n1"]
+73 [shape="circle" label="N73\n0"]
+77 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">77</td><td align="left">waterLevel = waterLevel + 1;</td></tr><tr><td align="right">79</td><td align="left"></td></tr></table>>]
+77 -> 76[label=""]
+74 -> 75 [label="Function start dummy edge" fontname="Courier New"]
+75 -> 77 [label="[waterLevel < 2]" fontname="Courier New"]
+75 -> 78 [label="[!(waterLevel < 2)]" fontname="Courier New"]
+76 -> 73 [label="return;" fontname="Courier New"]
+78 -> 76 [label="" fontname="Courier New"]
+}

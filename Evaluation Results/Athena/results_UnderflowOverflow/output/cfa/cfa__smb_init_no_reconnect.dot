@@ -1,0 +1,13 @@
+digraph smb_init_no_reconnect {
+17 [shape="circle" label="N17\n4"]
+18 [shape="circle" label="N18\n3"]
+19 [shape="circle" label="N19\n2"]
+20 [shape="circle" label="N20\n1"]
+16 [shape="circle" label="N16\n0"]
+17 -> 18 [label="Function start dummy edge" fontname="Courier New"]
+100003 [shape="component" label="__smb_init"]
+19 -> 100003 [label="__CPAchecker_TMP_0 = __smb_init(smb_command, tcon);" fontname="Courier New"]
+100003 -> 20 [label="" fontname="Courier New"]
+18 -> 19 [label="int __CPAchecker_TMP_0;" fontname="Courier New"]
+20 -> 16 [label="return __CPAchecker_TMP_0;" fontname="Courier New"]
+}

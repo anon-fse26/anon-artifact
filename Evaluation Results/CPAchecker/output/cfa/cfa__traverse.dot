@@ -1,0 +1,14 @@
+digraph traverse {
+49 [shape="doublecircle" label="N49\n4"]
+50 [shape="circle" label="N50\n1"]
+51 [shape="circle" label="N51\n3"]
+52 [shape="circle" label="N52\n0"]
+45 [shape="circle" label="N45\n2"]
+46 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">46</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">47</td><td align="left">struct list *curr = head;</td></tr><tr><td align="right">48</td><td align="left">while</td></tr></table>>]
+46 -> 49[label=""]
+49 -> 50 [label="[(curr->next) != 0]" fontname="Courier New"]
+49 -> 51 [label="[!((curr->next) != 0)]" fontname="Courier New"]
+50 -> 52 [label="curr = curr->next;" fontname="Courier New"]
+51 -> 45 [label="default return" fontname="Courier New"]
+52 -> 49 [label="" fontname="Courier New"]
+}

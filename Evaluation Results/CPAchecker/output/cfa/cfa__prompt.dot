@@ -1,0 +1,7 @@
+digraph prompt {
+1846 [shape="circle" label="N1846\n8"]
+1847 [shape="circle" label="N1847\n7"]
+1847 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1847</td><td align="left">int retValue_acc;</td></tr><tr><td align="right">1848</td><td align="left">int retval;</td></tr><tr><td align="right">1849</td><td align="left">const char *__cil_tmp4;</td></tr><tr><td align="right">1850</td><td align="left">__cil_tmp4 = (const char *)\&quot;%s\n\&quot;;</td></tr><tr><td align="right">1851</td><td align="left">printf(__cil_tmp4, msg);</td></tr><tr><td align="right">1852</td><td align="left">retValue_acc = retval;</td></tr><tr><td align="right">1853</td><td align="left">return retValue_acc;</td></tr></table>>]
+1847 -> 1845[label=""]
+1846 -> 1847 [label="Function start dummy edge" fontname="Courier New"]
+}

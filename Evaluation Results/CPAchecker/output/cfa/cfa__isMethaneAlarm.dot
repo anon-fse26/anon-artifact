@@ -1,0 +1,13 @@
+digraph isMethaneAlarm {
+168 [shape="circle" label="N168\n4"]
+169 [shape="circle" label="N169\n3"]
+170 [shape="circle" label="N170\n2"]
+171 [shape="circle" label="N171\n1"]
+167 [shape="circle" label="N167\n0"]
+168 -> 169 [label="Function start dummy edge" fontname="Courier New"]
+100024 [shape="component" label="isMethaneLevelCritical"]
+170 -> 100024 [label="retValue_acc = isMethaneLevelCritical();" fontname="Courier New"]
+100024 -> 171 [label="" fontname="Courier New"]
+169 -> 170 [label="int retValue_acc;" fontname="Courier New"]
+171 -> 167 [label="return retValue_acc;" fontname="Courier New"]
+}

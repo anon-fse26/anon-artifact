@@ -1,0 +1,7 @@
+digraph val_from_node {
+64 [shape="circle" label="N64\n3"]
+65 [shape="circle" label="N65\n2"]
+65 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">65</td><td align="left">struct node *entry = (struct node *)(((char *)head) - 8UL);</td></tr><tr><td align="right">66</td><td align="left">return entry-&gt;value;</td></tr></table>>]
+65 -> 63[label=""]
+64 -> 65 [label="Function start dummy edge" fontname="Courier New"]
+}

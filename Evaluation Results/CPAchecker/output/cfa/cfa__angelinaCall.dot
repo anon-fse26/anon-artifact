@@ -1,0 +1,17 @@
+digraph angelinaCall {
+1211 [shape="circle" label="N1211\n5"]
+1212 [shape="circle" label="N1212\n4"]
+1213 [shape="circle" label="N1213\n3"]
+1214 [shape="circle" label="N1214\n2"]
+1215 [shape="circle" label="N1215\n1"]
+1210 [shape="circle" label="N1210\n0"]
+1211 -> 1212 [label="Function start dummy edge" fontname="Courier New"]
+100001 [shape="component" label="getOrigin"]
+1213 -> 100001 [label="tmp = getOrigin(2);" fontname="Courier New"]
+100001 -> 1214 [label="" fontname="Courier New"]
+100002 [shape="component" label="initPersonOnFloor"]
+1214 -> 100002 [label="initPersonOnFloor(2, tmp);" fontname="Courier New"]
+100002 -> 1215 [label="" fontname="Courier New"]
+1212 -> 1213 [label="int tmp;" fontname="Courier New"]
+1215 -> 1210 [label="return;" fontname="Courier New"]
+}

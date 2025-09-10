@@ -1,0 +1,17 @@
+digraph CFA {
+1 [shape="circle" label="N1\n5"]
+7 [shape="circle" label="N7\n4"]
+8 [shape="circle" label="N8\n3"]
+2 [shape="circle" label="N2\n2"]
+3 [shape="doublecircle" label="N3\n1"]
+4 [shape="circle" label="N4\n0"]
+node [shape="circle"]
+subgraph cluster_main {
+label="main()"
+1 -> 7 [label="INIT GLOBAL VARS"]
+7 -> 8 [label="int main();"]
+8 -> 2 [label="Function start dummy edge"]
+2 -> 3 [label="while"]
+3 -> 4 [label=""]
+4 -> 3 [label=""]}
+}

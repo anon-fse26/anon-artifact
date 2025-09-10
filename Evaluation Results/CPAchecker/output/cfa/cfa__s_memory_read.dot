@@ -1,0 +1,17 @@
+digraph s_memory_read {
+7 [shape="circle" label="N7\n8"]
+8 [shape="circle" label="N8\n7"]
+9 [shape="diamond" label="N9\n6"]
+11 [shape="circle" label="N11\n3"]
+12 [shape="circle" label="N12\n5"]
+14 [shape="circle" label="N14\n4"]
+11 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">11</td><td align="left">x = s_memory0;</td></tr><tr><td align="right">13</td><td align="left"></td></tr><tr><td align="right">10</td><td align="left">return x;</td></tr></table>>]
+11 -> 6[label=""]
+7 -> 8 [label="Function start dummy edge" fontname="Courier New"]
+9 -> 11 [label="[i == 0]" fontname="Courier New"]
+9 -> 12 [label="[!(i == 0)]" fontname="Courier New"]
+100001 [shape="component" label="error"]
+12 -> 100001 [label="error();" fontname="Courier New"]
+100001 -> 14 [label="" fontname="Courier New"]
+8 -> 9 [label="int x;" fontname="Courier New"]
+}

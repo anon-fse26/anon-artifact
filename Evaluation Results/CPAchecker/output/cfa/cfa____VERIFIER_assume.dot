@@ -1,0 +1,14 @@
+digraph __VERIFIER_assume {
+489 [shape="circle" label="N489\n5"]
+490 [shape="circle" label="N490\n4"]
+491 [shape="doublecircle" label="N491\n3"]
+492 [shape="circle" label="N492\n0"]
+493 [shape="circle" label="N493\n2"]
+488 [shape="circle" label="N488\n1"]
+489 -> 490 [label="Function start dummy edge" fontname="Courier New"]
+491 -> 492 [label="[arg == 0]" fontname="Courier New"]
+491 -> 493 [label="[!(arg == 0)]" fontname="Courier New"]
+492 -> 491 [label="" fontname="Courier New"]
+490 -> 491 [label="while" fontname="Courier New"]
+493 -> 488 [label="default return" fontname="Courier New"]
+}
