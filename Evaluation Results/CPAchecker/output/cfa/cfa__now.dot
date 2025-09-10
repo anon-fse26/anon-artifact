@@ -1,7 +1,0 @@
-digraph now {
-434 [shape="circle" label="N434\n3"]
-435 [shape="circle" label="N435\n2"]
-435 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">435</td><td align="left">__LABS_time = __LABS_time + 1;</td></tr><tr><td align="right">436</td><td align="left">return __LABS_time;</td></tr></table>>]
-435 -> 433[label=""]
-434 -> 435 [label="Function start dummy edge" fontname="Courier New"]
-}

@@ -1,7 +1,0 @@
-digraph __startrek_check_assertions {
-1074 [shape="circle" label="N1074\n2"]
-1075 [shape="circle" label="N1075\n1"]
-1073 [shape="circle" label="N1073\n0"]
-1074 -> 1075 [label="Function start dummy edge" fontname="Courier New"]
-1075 -> 1073 [label="default return" fontname="Courier New"]
-}

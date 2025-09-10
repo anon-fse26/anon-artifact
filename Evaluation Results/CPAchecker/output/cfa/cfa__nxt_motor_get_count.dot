@@ -1,7 +1,0 @@
-digraph nxt_motor_get_count {
-81 [shape="circle" label="N81\n4"]
-82 [shape="circle" label="N82\n3"]
-82 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">82</td><td align="left">char tmp;</td></tr><tr><td align="right">83</td><td align="left">tmp = __VERIFIER_nondet_S8();</td></tr><tr><td align="right">84</td><td align="left">return tmp;</td></tr></table>>]
-82 -> 80[label=""]
-81 -> 82 [label="Function start dummy edge" fontname="Courier New"]
-}

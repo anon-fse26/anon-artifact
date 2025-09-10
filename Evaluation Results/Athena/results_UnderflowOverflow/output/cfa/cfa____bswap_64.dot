@@ -1,7 +1,0 @@
-digraph __bswap_64 {
-13 [shape="circle" label="N13\n4"]
-14 [shape="circle" label="N14\n3"]
-14 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">14</td><td align="left">int __CPAchecker_TMP_0;</td></tr><tr><td align="right">15</td><td align="left">__CPAchecker_TMP_0 = __builtin_bswap64(__bsx);</td></tr><tr><td align="right">16</td><td align="left">return __CPAchecker_TMP_0;</td></tr></table>>]
-14 -> 12[label=""]
-13 -> 14 [label="Function start dummy edge" fontname="Courier New"]
-}

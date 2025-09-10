@@ -1,3 +1,0 @@
-YES
-ERROR
-Runtime: 1438 milliseconds

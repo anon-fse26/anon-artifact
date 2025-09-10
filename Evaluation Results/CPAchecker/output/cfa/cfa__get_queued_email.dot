@@ -1,7 +1,0 @@
-digraph get_queued_email {
-1829 [shape="circle" label="N1829\n4"]
-1830 [shape="circle" label="N1830\n3"]
-1830 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1830</td><td align="left">int retValue_acc;</td></tr><tr><td align="right">1831</td><td align="left">retValue_acc = queued_message;</td></tr><tr><td align="right">1832</td><td align="left">return retValue_acc;</td></tr></table>>]
-1830 -> 1828[label=""]
-1829 -> 1830 [label="Function start dummy edge" fontname="Courier New"]
-}

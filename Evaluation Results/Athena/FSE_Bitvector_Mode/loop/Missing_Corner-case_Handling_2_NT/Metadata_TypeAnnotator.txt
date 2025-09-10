@@ -1,1 +1,0 @@
-TYPE vval.0: bv(32);

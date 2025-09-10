@@ -1,7 +1,0 @@
-digraph advance_number {
-1 [shape="circle" label="N1\n2"]
-2 [shape="circle" label="N2\n1"]
-0 [shape="circle" label="N0\n0"]
-1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
-2 -> 0 [label="return padvance->item_number;" fontname="Courier New"]
-}

@@ -1,7 +1,0 @@
-digraph __startrek_cs_t2 {
-1012 [shape="circle" label="N1012\n2"]
-1013 [shape="circle" label="N1013\n1"]
-1011 [shape="circle" label="N1011\n0"]
-1012 -> 1013 [label="Function start dummy edge" fontname="Courier New"]
-1013 -> 1011 [label="return 0;" fontname="Courier New"]
-}

@@ -1,7 +1,0 @@
-digraph initFloors {
-1393 [shape="circle" label="N1393\n37"]
-1394 [shape="circle" label="N1394\n36"]
-1394 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 1394 and 1429"]
-1394 -> 1392[label=""]
-1393 -> 1394 [label="Function start dummy edge" fontname="Courier New"]
-}

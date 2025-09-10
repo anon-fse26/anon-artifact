@@ -1,2 +1,0 @@
-OOM ERROR
-Runtime: 284711 milliseconds

@@ -1,7 +1,0 @@
-digraph __startrek_init_globals {
-855 [shape="circle" label="N855\n106"]
-856 [shape="circle" label="N856\n105"]
-856 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 856 and 960"]
-856 -> 854[label=""]
-855 -> 856 [label="Function start dummy edge" fontname="Courier New"]
-}
