@@ -1,0 +1,14 @@
+digraph __startrek_user_final {
+208 [shape="circle" label="N208\n5"]
+209 [shape="circle" label="N209\n4"]
+211 [shape="circle" label="N211\n2"]
+212 [shape="circle" label="N212\n1"]
+207 [shape="circle" label="N207\n0"]
+209 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">209</td><td align="left">int tmp;</td></tr><tr><td align="right">210</td><td align="left">tmp = _nxtway_gs_mode_[26];</td></tr></table>>]
+209 -> 211[label=""]
+208 -> 209 [label="Function start dummy edge" fontname="Courier New"]
+100059 [shape="component" label="assert"]
+211 -> 100059 [label="assert(tmp != 2);" fontname="Courier New"]
+100059 -> 212 [label="" fontname="Courier New"]
+212 -> 207 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph __CS_pthread_mutex_init {
+23 [shape="circle" label="N23\n2"]
+24 [shape="circle" label="N24\n1"]
+22 [shape="circle" label="N22\n0"]
+23 -> 24 [label="Function start dummy edge" fontname="Courier New"]
+24 -> 22 [label="return 0;" fontname="Courier New"]
+}

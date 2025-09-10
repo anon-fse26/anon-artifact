@@ -1,0 +1,7 @@
+digraph setup {
+41 [shape="circle" label="N41\n2"]
+42 [shape="circle" label="N42\n1"]
+40 [shape="circle" label="N40\n0"]
+41 -> 42 [label="Function start dummy edge" fontname="Courier New"]
+42 -> 40 [label="return;" fontname="Courier New"]
+}

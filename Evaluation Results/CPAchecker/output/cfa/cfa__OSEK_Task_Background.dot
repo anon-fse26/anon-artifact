@@ -1,0 +1,11 @@
+digraph OSEK_Task_Background {
+238 [shape="circle" label="N238\n5"]
+239 [shape="circle" label="N239\n4"]
+235 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">235</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">236</td><td align="left">unsigned char m;</td></tr><tr><td align="right">237</td><td align="left">unsigned char tmp;</td></tr></table>>]
+235 -> 238[label=""]
+239 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">239</td><td align="left">m = tmp;</td></tr><tr><td align="right">240</td><td align="left">ecrobot_status_monitor(\&quot;NXTway-GS\&quot;);</td></tr><tr><td align="right">241</td><td align="left">write_mode_on_lcd(m);</td></tr><tr><td align="right">242</td><td align="left">return;</td></tr></table>>]
+239 -> 234[label=""]
+100063 [shape="component" label="__startrek_read_nxtway_gs_mode"]
+238 -> 100063 [label="tmp = __startrek_read_nxtway_gs_mode();" fontname="Courier New"]
+100063 -> 239 [label="" fontname="Courier New"]
+}

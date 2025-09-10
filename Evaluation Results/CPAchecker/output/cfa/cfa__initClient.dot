@@ -1,0 +1,17 @@
+digraph initClient {
+862 [shape="circle" label="N862\n8"]
+863 [shape="circle" label="N863\n7"]
+864 [shape="diamond" label="N864\n6"]
+866 [shape="circle" label="N866\n3"]
+867 [shape="circle" label="N867\n5"]
+868 [shape="circle" label="N868\n2"]
+867 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">867</td><td align="left">retValue_acc = -1;</td></tr><tr><td align="right">871</td><td align="left">return retValue_acc;</td></tr></table>>]
+867 -> 861[label=""]
+868 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">868</td><td align="left">retValue_acc = __ste_Client_counter;</td></tr><tr><td align="right">869</td><td align="left">return retValue_acc;</td></tr></table>>]
+868 -> 861[label=""]
+862 -> 863 [label="Function start dummy edge" fontname="Courier New"]
+864 -> 866 [label="[__ste_Client_counter < 3]" fontname="Courier New"]
+864 -> 867 [label="[!(__ste_Client_counter < 3)]" fontname="Courier New"]
+866 -> 868 [label="__ste_Client_counter = __ste_Client_counter + 1;" fontname="Courier New"]
+863 -> 864 [label="int retValue_acc;" fontname="Courier New"]
+}

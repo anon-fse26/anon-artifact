@@ -1,0 +1,18 @@
+digraph r1 {
+1 [shape="circle" label="N1\n6"]
+2 [shape="diamond" label="N2\n5"]
+4 [shape="circle" label="N4\n1"]
+5 [shape="circle" label="N5\n4"]
+7 [shape="circle" label="N7\n3"]
+8 [shape="circle" label="N8\n2"]
+0 [shape="circle" label="N0\n0"]
+1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
+2 -> 4 [label="[ls == 0]" fontname="Courier New"]
+2 -> 5 [label="[!(ls == 0)]" fontname="Courier New"]
+100003 [shape="component" label="r1"]
+7 -> 100003 [label="__CPAchecker_TMP_0 = r1(ls - 1, (ls + 1) + a);" fontname="Courier New"]
+100003 -> 8 [label="" fontname="Courier New"]
+4 -> 0 [label="return a;" fontname="Courier New"]
+5 -> 7 [label="int __CPAchecker_TMP_0;" fontname="Courier New"]
+8 -> 0 [label="return __CPAchecker_TMP_0;" fontname="Courier New"]
+}

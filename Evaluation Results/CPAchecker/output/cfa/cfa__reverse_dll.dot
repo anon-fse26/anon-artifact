@@ -1,0 +1,13 @@
+digraph reverse_dll {
+66 [shape="doublecircle" label="N66\n7"]
+68 [shape="circle" label="N68\n1"]
+67 [shape="circle" label="N67\n6"]
+63 [shape="circle" label="N63\n0"]
+64 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">64</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">65</td><td align="left">while</td></tr></table>>]
+64 -> 66[label=""]
+67 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">67</td><td align="left">struct node *next = list-&gt;next;</td></tr><tr><td align="right">69</td><td align="left">list-&gt;next = list-&gt;prev;</td></tr><tr><td align="right">70</td><td align="left">list-&gt;prev = next;</td></tr><tr><td align="right">71</td><td align="left">list = next;</td></tr><tr><td align="right">72</td><td align="left"></td></tr></table>>]
+67 -> 66[label=""]
+66 -> 68 [label="[list == 0]" fontname="Courier New"]
+66 -> 67 [label="[!(list == 0)]" fontname="Courier New"]
+68 -> 63 [label="default return" fontname="Courier New"]
+}

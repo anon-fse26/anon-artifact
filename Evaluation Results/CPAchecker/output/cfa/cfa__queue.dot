@@ -1,0 +1,7 @@
+digraph queue {
+1808 [shape="circle" label="N1808\n5"]
+1809 [shape="circle" label="N1809\n4"]
+1809 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1809</td><td align="left">queue_empty = 0;</td></tr><tr><td align="right">1810</td><td align="left">queued_message = msg;</td></tr><tr><td align="right">1811</td><td align="left">queued_client = client;</td></tr><tr><td align="right">1812</td><td align="left">return;</td></tr></table>>]
+1809 -> 1807[label=""]
+1808 -> 1809 [label="Function start dummy edge" fontname="Courier New"]
+}

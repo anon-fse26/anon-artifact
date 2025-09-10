@@ -1,0 +1,7 @@
+digraph cloneEmail {
+1888 [shape="circle" label="N1888\n4"]
+1889 [shape="circle" label="N1889\n3"]
+1889 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1889</td><td align="left">int retValue_acc;</td></tr><tr><td align="right">1890</td><td align="left">retValue_acc = msg;</td></tr><tr><td align="right">1891</td><td align="left">return retValue_acc;</td></tr></table>>]
+1889 -> 1887[label=""]
+1888 -> 1889 [label="Function start dummy edge" fontname="Courier New"]
+}

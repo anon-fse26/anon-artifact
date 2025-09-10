@@ -1,0 +1,14 @@
+digraph main {
+14 [shape="circle" label="N14\n10"]
+21 [shape="circle" label="N21\n9"]
+18 [shape="circle" label="N18\n2"]
+19 [shape="circle" label="N19\n1"]
+13 [shape="circle" label="N13\n0"]
+21 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">21</td><td align="left">int pthread_mutex_trylock(int *mutex);</td></tr><tr><td align="right">22</td><td align="left">int my_pthread_mutex_trylock(int *mutex);</td></tr><tr><td align="right">23</td><td align="left">int main();</td></tr><tr><td align="right">24</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">15</td><td align="left">int mutex1 = 2;</td></tr><tr><td align="right">16</td><td align="left">int *mutex = &amp;mutex1;</td></tr><tr><td align="right">17</td><td align="left">int rc;</td></tr></table>>]
+21 -> 18[label=""]
+14 -> 21 [label="INIT GLOBAL VARS" fontname="Courier New"]
+100002 [shape="component" label="my_pthread_mutex_trylock"]
+18 -> 100002 [label="rc = my_pthread_mutex_trylock(mutex);" fontname="Courier New"]
+100002 -> 19 [label="" fontname="Courier New"]
+19 -> 13 [label="return 0;" fontname="Courier New"]
+}

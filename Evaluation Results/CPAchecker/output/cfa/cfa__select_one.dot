@@ -1,0 +1,7 @@
+digraph select_one {
+117 [shape="circle" label="N117\n6"]
+118 [shape="circle" label="N118\n5"]
+118 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">118</td><td align="left">int retValue_acc;</td></tr><tr><td align="right">119</td><td align="left">int choice;</td></tr><tr><td align="right">120</td><td align="left">choice = __VERIFIER_nondet_int();</td></tr><tr><td align="right">121</td><td align="left">retValue_acc = choice;</td></tr><tr><td align="right">122</td><td align="left">return retValue_acc;</td></tr></table>>]
+118 -> 116[label=""]
+117 -> 118 [label="Function start dummy edge" fontname="Courier New"]
+}

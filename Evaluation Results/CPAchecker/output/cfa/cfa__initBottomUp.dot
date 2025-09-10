@@ -1,0 +1,14 @@
+digraph initBottomUp {
+25 [shape="circle" label="N25\n16"]
+26 [shape="circle" label="N26\n15"]
+39 [shape="circle" label="N39\n2"]
+40 [shape="circle" label="N40\n1"]
+24 [shape="circle" label="N24\n0"]
+26 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">26</td><td align="left">currentFloorID = 0;</td></tr><tr><td align="right">27</td><td align="left">currentHeading = 1;</td></tr><tr><td align="right">28</td><td align="left">floorButtons_0 = 0;</td></tr><tr><td align="right">29</td><td align="left">floorButtons_1 = 0;</td></tr><tr><td align="right">30</td><td align="left">floorButtons_2 = 0;</td></tr><tr><td align="right">31</td><td align="left">floorButtons_3 = 0;</td></tr><tr><td align="right">32</td><td align="left">floorButtons_4 = 0;</td></tr><tr><td align="right">33</td><td align="left">persons_0 = 0;</td></tr><tr><td align="right">34</td><td align="left">persons_1 = 0;</td></tr><tr><td align="right">35</td><td align="left">persons_2 = 0;</td></tr><tr><td align="right">36</td><td align="left">persons_3 = 0;</td></tr><tr><td align="right">37</td><td align="left">persons_4 = 0;</td></tr><tr><td align="right">38</td><td align="left">persons_5 = 0;</td></tr></table>>]
+26 -> 39[label=""]
+25 -> 26 [label="Function start dummy edge" fontname="Courier New"]
+100166 [shape="component" label="initFloors"]
+39 -> 100166 [label="initFloors();" fontname="Courier New"]
+100166 -> 40 [label="" fontname="Courier New"]
+40 -> 24 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,18 @@
+digraph IoDeleteSymbolicLink {
+699 [shape="circle" label="N699\n10"]
+700 [shape="circle" label="N700\n9"]
+702 [shape="diamond" label="N702\n7"]
+704 [shape="circle" label="N704\n3"]
+705 [shape="circle" label="N705\n6"]
+711 [shape="circle" label="N711\n2"]
+700 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">700</td><td align="left">int tmp_ndt_3;</td></tr><tr><td align="right">701</td><td align="left">tmp_ndt_3 = __VERIFIER_nondet_int();</td></tr></table>>]
+700 -> 702[label=""]
+705 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">705</td><td align="left">Goto: switch_4_default</td></tr><tr><td align="right">714</td><td align="left">Label: switch_4_default</td></tr><tr><td align="right">715</td><td align="left">return -1073741823;</td></tr></table>>]
+705 -> 698[label=""]
+711 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">711</td><td align="left">Label: switch_4_0</td></tr><tr><td align="right">712</td><td align="left">return 0;</td></tr></table>>]
+711 -> 698[label=""]
+699 -> 700 [label="Function start dummy edge" fontname="Courier New"]
+702 -> 704 [label="[tmp_ndt_3 == 0]" fontname="Courier New"]
+702 -> 705 [label="[!(tmp_ndt_3 == 0)]" fontname="Courier New"]
+704 -> 711 [label="Goto: switch_4_0" fontname="Courier New"]
+}

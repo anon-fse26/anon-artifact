@@ -1,0 +1,18 @@
+digraph destroy_sl {
+67 [shape="circle" label="N67\n10"]
+68 [shape="circle" label="N68\n9"]
+70 [shape="doublecircle" label="N70\n7"]
+72 [shape="circle" label="N72\n2"]
+71 [shape="circle" label="N71\n6"]
+76 [shape="circle" label="N76\n1"]
+66 [shape="circle" label="N66\n0"]
+68 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">68</td><td align="left">struct sl_item *tmp;</td></tr><tr><td align="right">69</td><td align="left">while</td></tr></table>>]
+68 -> 70[label=""]
+71 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">71</td><td align="left">tmp = sl-&gt;head;</td></tr><tr><td align="right">73</td><td align="left">sl-&gt;head = sl-&gt;head-&gt;n1;</td></tr><tr><td align="right">74</td><td align="left">free(tmp);</td></tr><tr><td align="right">75</td><td align="left"></td></tr></table>>]
+71 -> 70[label=""]
+67 -> 68 [label="Function start dummy edge" fontname="Courier New"]
+70 -> 72 [label="[(sl->head) == 0]" fontname="Courier New"]
+70 -> 71 [label="[!((sl->head) == 0)]" fontname="Courier New"]
+72 -> 76 [label="free(sl);" fontname="Courier New"]
+76 -> 66 [label="default return" fontname="Courier New"]
+}

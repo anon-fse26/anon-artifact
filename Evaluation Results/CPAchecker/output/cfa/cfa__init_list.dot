@@ -1,0 +1,18 @@
+digraph init_list {
+31 [shape="circle" label="N31\n13"]
+32 [shape="circle" label="N32\n12"]
+36 [shape="doublecircle" label="N36\n8"]
+38 [shape="circle" label="N38\n5"]
+39 [shape="circle" label="N39\n7"]
+40 [shape="circle" label="N40\n4"]
+30 [shape="circle" label="N30\n6"]
+32 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">32</td><td align="left">struct list *curr = (void *)0;</td></tr><tr><td align="right">33</td><td align="left">struct list *tail = curr;</td></tr><tr><td align="right">34</td><td align="left">for</td></tr><tr><td align="right">35</td><td align="left">int j = 0;</td></tr></table>>]
+32 -> 36[label=""]
+40 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">40</td><td align="left">curr-&gt;value = __VERIFIER_nondet_int();</td></tr><tr><td align="right">41</td><td align="left">curr-&gt;next = tail;</td></tr><tr><td align="right">42</td><td align="left">tail = curr;</td></tr><tr><td align="right">43</td><td align="left"></td></tr><tr><td align="right">37</td><td align="left">j = j + 1;</td></tr></table>>]
+40 -> 36[label=""]
+31 -> 32 [label="Function start dummy edge" fontname="Courier New"]
+36 -> 38 [label="[j < n]" fontname="Courier New"]
+36 -> 39 [label="[!(j < n)]" fontname="Courier New"]
+38 -> 40 [label="curr = malloc(16UL);" fontname="Courier New"]
+39 -> 30 [label="return curr;" fontname="Courier New"]
+}
