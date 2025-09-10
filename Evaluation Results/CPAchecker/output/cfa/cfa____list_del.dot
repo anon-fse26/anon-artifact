@@ -1,7 +1,0 @@
-digraph __list_del {
-12 [shape="circle" label="N12\n4"]
-13 [shape="circle" label="N13\n3"]
-13 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">13</td><td align="left">next-&gt;prev = prev;</td></tr><tr><td align="right">14</td><td align="left">prev-&gt;next = next;</td></tr><tr><td align="right">15</td><td align="left">default return</td></tr></table>>]
-13 -> 11[label=""]
-12 -> 13 [label="Function start dummy edge" fontname="Courier New"]
-}

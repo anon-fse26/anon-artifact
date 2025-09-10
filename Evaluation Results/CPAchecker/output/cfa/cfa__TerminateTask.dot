@@ -1,7 +1,0 @@
-digraph TerminateTask {
-197 [shape="circle" label="N197\n2"]
-198 [shape="circle" label="N198\n1"]
-196 [shape="circle" label="N196\n0"]
-197 -> 198 [label="Function start dummy edge" fontname="Courier New"]
-198 -> 196 [label="return;" fontname="Courier New"]
-}

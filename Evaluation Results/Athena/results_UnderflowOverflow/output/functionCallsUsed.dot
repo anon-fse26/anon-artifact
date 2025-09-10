@@ -1,9 +1,0 @@
-digraph functioncalls {
-rankdir=LR;
-
-main [shape="box", color=blue];
-my_pthread_mutex_trylock [label="my_pthread_mutex_trylock", ];
-main -> my_pthread_mutex_trylock;
-pthread_mutex_trylock [label="pthread_mutex_trylock", ];
-my_pthread_mutex_trylock -> pthread_mutex_trylock;
-}

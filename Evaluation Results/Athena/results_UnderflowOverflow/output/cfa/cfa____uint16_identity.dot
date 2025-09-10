@@ -1,7 +1,0 @@
-digraph __uint16_identity {
-19 [shape="circle" label="N19\n2"]
-20 [shape="circle" label="N20\n1"]
-18 [shape="circle" label="N18\n0"]
-19 -> 20 [label="Function start dummy edge" fontname="Courier New"]
-20 -> 18 [label="return __x;" fontname="Courier New"]
-}

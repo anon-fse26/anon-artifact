@@ -1,7 +1,0 @@
-digraph __automaton_fail {
-256 [shape="circle" label="N256\n4"]
-257 [shape="circle" label="N257\n3"]
-257 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">257</td><td align="left">Label: ERROR</td></tr><tr><td align="right">258</td><td align="left">__VERIFIER_error();</td></tr></table>>]
-257 -> 610[label=""]
-256 -> 257 [label="Function start dummy edge" fontname="Courier New"]
-}

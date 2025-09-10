@@ -1,7 +1,0 @@
-digraph balance_init {
-8 [shape="circle" label="N8\n7"]
-9 [shape="circle" label="N9\n6"]
-9 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">9</td><td align="left">ud_err_theta = 0.0;</td></tr><tr><td align="right">10</td><td align="left">ud_theta_ref = 0.0;</td></tr><tr><td align="right">11</td><td align="left">ud_thetadot_cmd_lpf = 0.0;</td></tr><tr><td align="right">12</td><td align="left">ud_psi = 0.0;</td></tr><tr><td align="right">13</td><td align="left">ud_theta_lpf = 0.0;</td></tr><tr><td align="right">14</td><td align="left">return;</td></tr></table>>]
-9 -> 7[label=""]
-8 -> 9 [label="Function start dummy edge" fontname="Courier New"]
-}

@@ -1,7 +1,0 @@
-digraph select_helpers {
-130 [shape="circle" label="N130\n2"]
-131 [shape="circle" label="N131\n1"]
-129 [shape="circle" label="N129\n0"]
-130 -> 131 [label="Function start dummy edge" fontname="Courier New"]
-131 -> 129 [label="return;" fontname="Courier New"]
-}

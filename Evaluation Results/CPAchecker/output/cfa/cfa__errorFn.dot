@@ -1,7 +1,0 @@
-digraph errorFn {
-492 [shape="circle" label="N492\n4"]
-493 [shape="circle" label="N493\n3"]
-493 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">493</td><td align="left">Label: ERROR</td></tr><tr><td align="right">494</td><td align="left">__VERIFIER_error();</td></tr></table>>]
-493 -> 533[label=""]
-492 -> 493 [label="Function start dummy edge" fontname="Courier New"]
-}

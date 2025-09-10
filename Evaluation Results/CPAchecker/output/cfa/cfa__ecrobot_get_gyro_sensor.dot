@@ -1,7 +1,0 @@
-digraph ecrobot_get_gyro_sensor {
-94 [shape="circle" label="N94\n4"]
-95 [shape="circle" label="N95\n3"]
-95 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">95</td><td align="left">unsigned int tmp;</td></tr><tr><td align="right">96</td><td align="left">tmp = __VERIFIER_nondet_U32();</td></tr><tr><td align="right">97</td><td align="left">return tmp;</td></tr></table>>]
-95 -> 93[label=""]
-94 -> 95 [label="Function start dummy edge" fontname="Courier New"]
-}

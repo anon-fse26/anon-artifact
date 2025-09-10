@@ -1,7 +1,0 @@
-digraph write_manual_selection_history {
-73 [shape="circle" label="N73\n5"]
-74 [shape="circle" label="N74\n4"]
-74 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">74</td><td align="left">manual_selection_History_2 = manual_selection_History_1;</td></tr><tr><td align="right">75</td><td align="left">manual_selection_History_1 = manual_selection_History_0;</td></tr><tr><td align="right">76</td><td align="left">manual_selection_History_0 = val;</td></tr><tr><td align="right">77</td><td align="left">return;</td></tr></table>>]
-74 -> 72[label=""]
-73 -> 74 [label="Function start dummy edge" fontname="Courier New"]
-}

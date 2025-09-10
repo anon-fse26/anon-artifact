@@ -1,7 +1,0 @@
-digraph ecrobot_get_systick_ms {
-87 [shape="circle" label="N87\n5"]
-88 [shape="circle" label="N88\n4"]
-88 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">88</td><td align="left">unsigned int r;</td></tr><tr><td align="right">89</td><td align="left">r = timer;</td></tr><tr><td align="right">90</td><td align="left">timer = timer + 1000U;</td></tr><tr><td align="right">91</td><td align="left">return r;</td></tr></table>>]
-88 -> 86[label=""]
-87 -> 88 [label="Function start dummy edge" fontname="Courier New"]
-}

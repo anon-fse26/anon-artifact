@@ -1,7 +1,0 @@
-digraph ecrobot_get_nxtcolorsensor_light {
-191 [shape="circle" label="N191\n4"]
-192 [shape="circle" label="N192\n3"]
-192 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">192</td><td align="left">unsigned char tmp;</td></tr><tr><td align="right">193</td><td align="left">tmp = __VERIFIER_nondet_U8();</td></tr><tr><td align="right">194</td><td align="left">return tmp;</td></tr></table>>]
-192 -> 190[label=""]
-191 -> 192 [label="Function start dummy edge" fontname="Courier New"]
-}

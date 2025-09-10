@@ -1,7 +1,0 @@
-digraph DiskPerfSyncFilterWithTarget {
-26 [shape="circle" label="N26\n6"]
-27 [shape="circle" label="N27\n5"]
-27 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">27</td><td align="left">int FilterDevice__Flags;</td></tr><tr><td align="right">28</td><td align="left">int TargetDevice__Characteristics;</td></tr><tr><td align="right">29</td><td align="left">int FilterDevice__Characteristics;</td></tr><tr><td align="right">30</td><td align="left">int propFlags;</td></tr><tr><td align="right">31</td><td align="left">return;</td></tr></table>>]
-27 -> 25[label=""]
-26 -> 27 [label="Function start dummy edge" fontname="Courier New"]
-}

@@ -1,7 +1,0 @@
-digraph ecrobot_read_bt_packet {
-100 [shape="circle" label="N100\n4"]
-101 [shape="circle" label="N101\n3"]
-101 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">101</td><td align="left">*(bt_receive_buf + 0) = __VERIFIER_nondet_U8();</td></tr><tr><td align="right">102</td><td align="left">*(bt_receive_buf + 1) = __VERIFIER_nondet_U8();</td></tr><tr><td align="right">103</td><td align="left">return;</td></tr></table>>]
-101 -> 99[label=""]
-100 -> 101 [label="Function start dummy edge" fontname="Courier New"]
-}

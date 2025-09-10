@@ -1,7 +1,0 @@
-digraph deliver {
-1764 [shape="circle" label="N1764\n3"]
-1765 [shape="circle" label="N1765\n2"]
-1765 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1765</td><td align="left">puts(\&quot;mail delivered\n\&quot;);</td></tr><tr><td align="right">1766</td><td align="left">return;</td></tr></table>>]
-1765 -> 1763[label=""]
-1764 -> 1765 [label="Function start dummy edge" fontname="Courier New"]
-}

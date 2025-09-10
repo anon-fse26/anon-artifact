@@ -1,2 +1,0 @@
-NO
-Runtime: 2180 milliseconds
