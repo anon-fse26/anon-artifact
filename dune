@@ -1,0 +1,15 @@
+(rule
+ (with-stdout-to
+  version.ml
+  (echo "let version = \"%{version:CoAR}\"")))
+
+(executable
+ (name main)
+ (public_name main)
+ (libraries core core_unix.command_unix CoAR)
+ (preprocess
+  (pps ppx_deriving.std))
+ (flags
+  (-cclib -lstdc++)))
+
+; (flags (-cclib -lstdc++ -cclib -lglpk -cclib -lgurobi)))

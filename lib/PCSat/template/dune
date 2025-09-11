@@ -1,0 +1,28 @@
+(library
+ (name template)
+ (public_name CoAR.PCSat.template)
+ (preprocess
+  (pps ppx_deriving_yojson))
+ (libraries
+  core
+  yojson
+  CoAR.ast
+  CoAR.PCSat.qualifier
+  CoAR.PCSat.common
+  CoAR.common)
+ (modules
+  function
+  predicateDNF
+  predicateFlex
+  predicateArrays
+  NWFPredicate
+  WFPredicate
+  WFPredicateFlex
+  FNPredicate
+  FNPredicateFlex
+  NEPredicate
+  admPredicate
+  integPredicate
+  intFunction
+  intFunctionFlex
+  regEx))

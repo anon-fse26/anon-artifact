@@ -1,0 +1,15 @@
+.git
+_build
+.vscode
+
+cav21ae_dt
+cav21ae_rel
+popl24ae
+icfp24ae
+forStarExec
+learner
+script
+!script/fse2026/solver.sh
+!script/fse2026/Ptr2Arr
+!script/fse2026/SemanticAugmentor
+!script/fse2026/TypeAnnotator

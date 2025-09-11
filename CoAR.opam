@@ -1,0 +1,21 @@
+opam-version: "2.0"
+name: "CoAR"
+version: "3.3"
+maintainer: "Anonymous"
+synopsis: "Anonymous"
+description: ""
+depends: [
+  "ocaml" {>= "5.3.0"}
+  "core"
+  "core_unix"
+  "domainslib"
+  "menhir"
+  "ppx_deriving_yojson"
+  "ocaml-compiler-libs"
+  "ocamlgraph"
+  "zarith"
+  "z3"
+  "minisat"
+  "camlzip"
+]
+build: ["dune" "build"]
