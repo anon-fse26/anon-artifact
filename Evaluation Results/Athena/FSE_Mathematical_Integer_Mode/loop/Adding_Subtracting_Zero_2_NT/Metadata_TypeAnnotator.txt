@@ -1,3 +1,0 @@
-TYPE v7: bv(32);
-TYPE v8: bv(32);
-TYPE v12: bv(32);

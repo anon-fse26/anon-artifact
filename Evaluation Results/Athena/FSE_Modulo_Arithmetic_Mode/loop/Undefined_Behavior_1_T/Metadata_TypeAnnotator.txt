@@ -1,1 +1,0 @@
-TYPE vnum.0: bv(32);

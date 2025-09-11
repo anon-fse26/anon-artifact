@@ -1,9 +1,0 @@
-
-FunctionParameter, cstrreplace, s
-Macro, MEMORY0_SIZE
-GlobalVariable, memory0_freeIndex
-Function, allocate_memory0
-FunctionParameter, allocate_memory0, size
-LocalVariable, allocate_memory0, allocatedIndex
-LocalVariable, cstrreplace, p
-LocalVariable, main, nondetString1
