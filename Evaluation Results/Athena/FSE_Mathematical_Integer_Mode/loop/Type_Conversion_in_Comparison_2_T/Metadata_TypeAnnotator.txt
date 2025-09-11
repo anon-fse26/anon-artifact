@@ -1,2 +1,0 @@
-TYPE v0: bv(8);
-TYPE v1: bv(8);

@@ -1,2 +1,0 @@
-TYPE v0: bv(32);
-TYPE v3: bv(32);
