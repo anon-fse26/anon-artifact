@@ -1,0 +1,23 @@
+(library
+ (name qualifier)
+ (public_name CoAR.PCSat.qualifier)
+ (preprocess
+  (pps ppx_deriving_yojson))
+ (libraries
+  core
+  yojson
+  CoAR.ast
+  CoAR.common
+  CoAR.pCSP
+  CoAR.PCSat.common
+  CoAR.PCSat.bf_synthesis)
+ (modules
+  null
+  interval
+  octagon
+  octahedron
+  polyhedron
+  polynomial
+  NN
+  union
+  generator))
